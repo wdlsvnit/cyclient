@@ -1,0 +1,60 @@
+{
+  "name": "cyclient",
+  "productName": "cyclient",
+  "version": "0.0.1",
+  "description": "Unofficial Cyberoam Client",
+  "license": "MIT",
+  "repository": "akashnimare/Cyclient",
+  "author": {
+    "name": "Akash Nimare",
+    "email": "svnitakash@gmail.com",
+    "url": "akashnimare.in"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "electronVersion": "0.33.3",
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "npm run build-osx && npm run build-linux",
+    "build-osx": "electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --ignore='^/media$' --prune --platform=darwin --arch=x64 --icon=media/Icon.icns --app-bundle-id=com.akashnimare.cyclient --sign='Developer ID Application: Akash Nimare (YG56YK5RN8)' --app-version=$npm_package_version --version=$npm_package_electronVersion && cd dist/cyclient-darwin-x64 && zip -ryXq9 ../Cyclent-${npm_package_version}.zip Cyclent.app",
+    "build-linux": "electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --ignore='^/media/(?!Icon.png$).*' --prune --platform=linux --arch=x64 --app-bundle-id=com.akashnimare.cyclient --app-version=$npm_package_version --version=$npm_package_electronVersion && cd dist/cyclient-linux-x64/ && zip -ryq9 ../cyclient-linux-\"$npm_package_version\".zip *"
+  },
+  "files": [
+    "js/index.js",
+    "js/browser.js",
+    "css/browser.css",
+    "css/sweet.css",
+    "js/sweet.js",
+    "js/menu.js",
+    "js/cy.js",
+    "js/jquery.js",
+    "media/Icon.icns"
+  ],
+  "keywords": [
+    "electron-app",
+    "Cyclient",
+    "Cyberoam",
+    "App",
+    "login"
+  ],
+  "dependencies": {
+    "electron-debug": "^0.2.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.1.0",
+    "electron-prebuilt": "^0.33.3",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "ignores": [
+      "dist/**"
+    ]
+  }
+}

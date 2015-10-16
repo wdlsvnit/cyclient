@@ -1,0 +1,80 @@
+html {
+	overflow: hidden;
+}
+body
+{
+    /*overflow-Y:scroll !important;*/
+    background: #36DBB4 !important;
+}
+.maindiv{
+	background: #36DBB4 !important;
+    margin:40% !important;
+   /* padding-top:200px !important: */
+    margin: 55% 12% !important;
+    padding-top: 150px !important
+
+}
+.tablecss{
+	font-size: 25px !important;
+}
+/*input {
+  font-size: 30px !important;
+  width: 10px; padding: 2px; border: 1px solid black
+}*/
+
+/*.textbox{
+	font-size:55px !important;
+	color:red !important;
+	padding: 2px !important; border: 1px solid black !important
+
+}*/
+
+.tablecss input[type="text"] {
+  padding: 10px !important;
+  border: solid 5px #c9c9c9 !important;
+  transition: border 0.3s !important;
+  font-size: 25px !important;
+}
+.tablecss input[type="text"]:focus,
+.tablecss input[type="text"].focus {
+  border: solid 5px #969696 !important;
+    font-size: 25px !important;
+}
+
+.tablecss input[type="password"] {
+  padding: 10px !important;
+  border: solid 5px #c9c9c9 !important;
+  transition: border 0.3s !important;
+    font-size: 25px !important;
+}
+.tablecss input[type="password"]:focus,
+.tablecss input[type="password"].focus {
+  border: solid 5px #969696 !important;
+    font-size: 25px !important;
+}
+
+.liformyaccount{
+	display: none !important;
+}
+.headerdiv{
+	display: none !important;
+}
+.headerclass{
+	display: none !important;
+}
+.button {
+    font-weight: bold !important;
+    background-color: #CBE523 !important;
+    width:232px !important;
+    padding-top:6px !important;
+    font-size: 24px !important;
+    }
+
+#logo{
+	display: none !important;
+}
+
+.msgdiv .note .font{
+	font-size: 42px !important;
+	font-color:yellow !important;
+}
