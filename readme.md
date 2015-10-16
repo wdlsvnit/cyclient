@@ -5,6 +5,10 @@
 <br>
 <img src="media/screenshot.png" align="center">
 
+<img src="media/login.png" align="center">
+
+<img src="media/error.png" align="center">
+
 *Requires OS X 10.8+ or Linux. Windows support planned.*
 
 ## Dev
