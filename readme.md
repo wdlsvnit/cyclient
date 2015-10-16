@@ -26,4 +26,4 @@ Built with [Electron](http://electron.atom.io).
 
 ## License
 
-MIT © [Akash Nimare](http://akashnimare.in)
+MIT © [WebDevlabs](https://www.facebook.com/webdevlabs)
