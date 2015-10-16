@@ -30,10 +30,10 @@ function createMainWindow() {
 		'web-preferences': {
 			// fails without this because of CommonJS script detection
 			'node-integration': false,
-			'preload': path.join(__dirname, 'js/browser.js'),
-			'preload': path.join(__dirname, 'js/jquery.js'),
-			'preload': path.join(__dirname, 'js/main.js'),
-			'preload': path.join(__dirname, 'js/cy.js'),
+			'preload': path.join(__dirname, 'browser.js'),
+			'preload': path.join(__dirname, 'jquery.js'),
+			'preload': path.join(__dirname, 'main.js'),
+			'preload': path.join(__dirname, 'cy.js'),
 			'web-security': false,
 			'plugins': true
 		}
@@ -55,9 +55,9 @@ app.on('ready', () => {
 	page.on('dom-ready', () => {
 		page.insertCSS(fs.readFileSync(path.join(__dirname, 'css/browser.css'), 'utf8'));
 		page.insertCSS(fs.readFileSync(path.join(__dirname, 'css/sweet.css'), 'utf8'));
-		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'js/jquery.js'), 'utf8'));
-		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'js/main.js'), 'utf8'));
-		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'js/sweet.js'), 'utf8'));
+		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'jquery.js'), 'utf8'));
+		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'main.js'), 'utf8'));
+		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'sweet.js'), 'utf8'));
 		mainWindow.show();
 	});
 

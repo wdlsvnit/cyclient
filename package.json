@@ -22,14 +22,14 @@
     "build-linux": "electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --ignore='^/media/(?!Icon.png$).*' --prune --platform=linux --arch=x64 --app-bundle-id=com.akashnimare.cyclient --app-version=$npm_package_version --version=$npm_package_electronVersion && cd dist/cyclient-linux-x64/ && zip -ryq9 ../cyclient-linux-\"$npm_package_version\".zip *"
   },
   "files": [
-    "js/index.js",
-    "js/browser.js",
+    "index.js",
+    "browser.js",
     "css/browser.css",
     "css/sweet.css",
-    "js/sweet.js",
-    "js/menu.js",
-    "js/cy.js",
-    "js/jquery.js",
+    "sweet.js",
+    "menu.js",
+    "cy.js",
+    "jquery.js",
     "media/Icon.icns"
   ],
   "keywords": [
