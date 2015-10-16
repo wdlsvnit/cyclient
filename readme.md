@@ -3,7 +3,7 @@
 > Unofficial Cyberoam client 
 
 <br>
-[![](media/screenshot.png)](https://github.com/akashnimare/cyclient/releases/latest)
+<img src="media/screenshot.png" align="center">
 
 *Requires OS X 10.8+ or Linux. Windows support planned.*
 
