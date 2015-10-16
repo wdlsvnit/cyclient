@@ -5,9 +5,9 @@
 <br>
 <img src="media/screenshot.png" align="center">
 
-<img src="media/login.png" align="center">
+<img src="media/login.png" width="400px" align="center">
 
-<img src="media/error.png" align="center">
+<img src="media/error.png" width="400px" align="center">
 
 *Requires OS X 10.8+ or Linux. Windows support planned.*
 
