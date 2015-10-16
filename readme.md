@@ -26,4 +26,4 @@ Built with [Electron](http://electron.atom.io).
 
 ## License
 
-MIT © [WebDevlabs](https://www.facebook.com/webdevlabs)
+MIT © [WebDevlabs](https://www.facebook.com/webdevlabs) 
