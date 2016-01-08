@@ -15,7 +15,7 @@
 
 Built with [Electron](http://electron.atom.io).
 
-###### Commands
+## Usage
 
 - Init: `$ npm install`
 - Run: `$ npm start`
