@@ -1,6 +1,6 @@
 # <img src="media/Icon.png" width="45" align="left">&nbsp;Cyclient
 
-> Unofficial Cyberoam client 
+> Unofficial Cyberoam client [WIP]
 
 <br>
 <img src="media/screenshot.png" align="center">
@@ -17,11 +17,10 @@ Built with [Electron](http://electron.atom.io).
 
 ## Usage
 
-- Init: `$ npm install`
+- Install dependencies: `$ npm install`
 - Run: `$ npm start`
 - Build OS X: `$ npm run build-osx`
-- Build Linux: `$ npm run build-linux`
-- Build all: `$ npm run build` *(OS X only)*
+- Build Linux: `WIP`
 
 
 ## License
