@@ -34,7 +34,7 @@ function createMainWindow() {
 			'preload': path.join(__dirname, 'jquery.js'),
 			'preload': path.join(__dirname, 'main.js'),
 			'preload': path.join(__dirname, 'cy.js'),
-			'web-security': false,
+			'web-security': true, //set it false for testing
 			'plugins': true
 		}
 	});
