@@ -21,8 +21,3 @@ Built with [Electron](http://electron.atom.io).
 - Run: `$ npm start`
 - Build OS X: `$ npm run build-osx`
 - Build Linux: `WIP`
-
-
-## License
-
-MIT © [WebDevlabs](https://www.facebook.com/webdevlabs) 
