@@ -1,6 +1,6 @@
 # <img src="media/Icon.png" width="45" align="left">&nbsp;Cyclient
 
-> Unofficial Cyberoam client [WIP]
+> Unofficial Cyberoam client
 
 <br>
 <img src="media/screenshot.png" align="center">
