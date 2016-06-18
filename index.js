@@ -30,10 +30,7 @@ function createMainWindow() {
 		'web-preferences': {
 			// fails without this because of CommonJS script detection
 			'node-integration': false,
-			'preload': path.join(__dirname, 'browser.js'),
-			'preload': path.join(__dirname, 'jquery.js'),
-			'preload': path.join(__dirname, 'main.js'),
-			'preload': path.join(__dirname, 'cy.js'),
+			'preload': path.join(__dirname, '/js/browser.js'),
 			'web-security': true, //set it false for testing
 			'plugins': true
 		}
@@ -47,30 +44,23 @@ function createMainWindow() {
 
 app.on('ready', () => {
 	Menu.setApplicationMenu(appMenu);
-
 	mainWindow = createMainWindow();
-
 	const page = mainWindow.webContents;
-
 	page.on('dom-ready', () => {
 		page.insertCSS(fs.readFileSync(path.join(__dirname, 'css/browser.css'), 'utf8'));
 		page.insertCSS(fs.readFileSync(path.join(__dirname, 'css/sweet.css'), 'utf8'));
-		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'jquery.js'), 'utf8'));
-		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'main.js'), 'utf8'));
-		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'sweet.js'), 'utf8'));
+		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'js/jquery.js'), 'utf8'));
+		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'js/main.js'), 'utf8'));
+		page.executeJavaScript(fs.readFileSync(path.join(__dirname, 'js/sweet.js'), 'utf8'));
 		mainWindow.show();
 	});
 
 	page.on('did-finish-load',() => {  
     mainWindow.setTitle("Cyberoam Client");
 });
-
-
 	page.on('did-fail-load',() => {  
- 
     console.log("Failed to load");
 });
-
 
 	page.on('new-window', (e, url) => {
 		e.preventDefault();

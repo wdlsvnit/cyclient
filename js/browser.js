@@ -1,8 +1,6 @@
 'use strict';
 const ipc = require('ipc');
 
-
-
 ipc.on('login', () => {
 	//login
 	document.querySelector('#logincaption').click();
